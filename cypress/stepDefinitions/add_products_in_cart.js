@@ -54,7 +54,7 @@ When("I hover over the second product and click Add to cart", () => {
 
 // Step: Verify the second product is added to the cart
 Then("the second product is added to the cart", () => {
-    cartPageModalHeader.verifyProductAdded(2);
+    cartPageModalHeader.verifyProductAdded();
 });
 
 // Step: Click the View Cart button
@@ -64,7 +64,7 @@ When("I click the View Cart button", () => {
 
 // Step: Verify both products are in the cart
 Then("I should see both products in the cart", () => {
-    cartPageModalHeader.verifyMultipleProductsAdded([1, 2]);
+    cartPageModalHeader.verifyMultipleProductsAdded();
 });
 
 // Step: Verify prices, quantities, and total price
